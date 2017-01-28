@@ -1,5 +1,5 @@
 {
-    "name": "janwebdev/sf-i18n-bundle",
+    "name": "symfonyI18n",
     "type": "symfony-bundle",
     "description": "Manage i18n",
     "keywords": ["symfony i18n translation"],
