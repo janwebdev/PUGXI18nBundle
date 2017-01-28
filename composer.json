@@ -25,5 +25,5 @@
         "psr-0": { "Janwebdev\\SFI18nBundle": "" }
     },
 
-    "target-dir": "janwebdev/SFI18nBundle"
+    "target-dir": "Janwebdev/SFI18nBundle"
 }
