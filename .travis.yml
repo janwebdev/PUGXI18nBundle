@@ -2,7 +2,9 @@
 php: 
 - 5.3
 - 5.4
-notifications: 
+- 7.0
+- 7.1
+notifications:
   email: 
   - leonardo.proietti@gmail.com
 before_script: 

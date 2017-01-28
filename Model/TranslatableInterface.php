@@ -1,9 +1,9 @@
 <?php
 
-namespace PUGX\I18nBundle\Model;
+namespace Janwebdev\SFI18nBundle\Model;
 
-use PUGX\I18nBundle\Model\TranslatingInterface;
-use PUGX\I18nBundle\Locale\LocaleInterface;
+use Janwebdev\SFI18nBundle\Model\TranslatingInterface;
+use Janwebdev\SFI18nBundle\Locale\LocaleInterface;
 
 interface TranslatableInterface
 {    

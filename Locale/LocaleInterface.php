@@ -1,6 +1,6 @@
 <?php
 
-namespace PUGX\I18nBundle\Locale;
+namespace Janwebdev\SFI18nBundle\Locale;
 
 /**
  * 

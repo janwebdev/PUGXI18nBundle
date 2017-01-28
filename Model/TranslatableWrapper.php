@@ -1,6 +1,6 @@
 <?php
 
-namespace PUGX\I18nBundle\Model;
+namespace Janwebdev\SFI18nBundle\Model;
 
 abstract class TranslatableWrapper extends Translatable
 {    

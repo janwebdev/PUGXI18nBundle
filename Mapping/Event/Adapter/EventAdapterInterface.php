@@ -1,6 +1,6 @@
 <?php
 
-namespace PUGX\I18nBundle\Mapping\Event\Adapter;
+namespace Janwebdev\SFI18nBundle\Mapping\Event\Adapter;
 
 use Doctrine\Common\EventArgs;
 

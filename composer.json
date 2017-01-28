@@ -1,33 +1,29 @@
 {
-    "name": "pugx/i18n-bundle",
+    "name": "janwebdev/sf-i18n-bundle",
     "type": "symfony-bundle",
     "description": "Manage i18n",
-    "keywords": ["symfony2 i18n translation"],
-    "homepage": "https://github.com/PUGX",
+    "keywords": ["symfony i18n translation"],
+    "homepage": "https://github.com/janwebdev/SFI18nBundle",
     "license": "MIT",
     "authors": [
         {
             "name":"Leonardo Proietti",
             "email":"leonardo.proietti@gmail.com"
-        },
-        {
-            "name": "Community",
-            "homepage": "https://github.com/PUGX/PUGXI118nBundle/contributors"
         }
     ],
     "minimum-stability": "dev",
     "require": {
         "php": ">=5.3.3",
         "symfony/framework-bundle": "dev-master",
-        "doctrine/orm": "~2.2,>=2.2.3"
+        "doctrine/orm": "^2.5"
     },
     "require-dev": {
         "symfony/yaml": "dev-master"
     },
 
     "autoload": {
-        "psr-0": { "PUGX\\I18nBundle": "" }
+        "psr-0": { "Janwebdev\\SFI18nBundle": "" }
     },
 
-    "target-dir": "PUGX/I18nBundle"
+    "target-dir": "janwebdev/SFI18nBundle"
 }

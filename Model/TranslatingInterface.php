@@ -1,8 +1,8 @@
 <?php
 
-namespace PUGX\I18nBundle\Model;
+namespace Janwebdev\SFI18nBundle\Model;
 
-use PUGX\I18nBundle\Model\TranslatableInterface;
+use Janwebdev\SFI18nBundle\Model\TranslatableInterface;
 
 interface TranslatingInterface
 {

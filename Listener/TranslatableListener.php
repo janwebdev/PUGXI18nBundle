@@ -1,12 +1,12 @@
 <?php
 
-namespace PUGX\I18nBundle\Listener;
+namespace Janwebdev\SFI18nBundle\Listener;
 
 use Doctrine\Common\EventArgs;
 use Doctrine\Common\EventSubscriber;
-use PUGX\I18nBundle\Locale\LocaleInterface;
-use PUGX\I18nBundle\Model\TranslatableInterface;
-use PUGX\I18nBundle\Mapping\Event\Adapter\EventAdapterInterface;
+use Janwebdev\SFI18nBundle\Locale\LocaleInterface;
+use Janwebdev\SFI18nBundle\Model\TranslatableInterface;
+use Janwebdev\SFI18nBundle\Mapping\Event\Adapter\EventAdapterInterface;
 
 /**
  * 

@@ -1,8 +1,8 @@
 <?php
 
-namespace PUGX\I18nBundle\Listener;
+namespace Janwebdev\SFI18nBundle\Listener;
 
-use PUGX\I18nBundle\Locale\LocaleInterface;
+use Janwebdev\SFI18nBundle\Locale\LocaleInterface;
 use Symfony\Component\HttpKernel\KernelEvents;
 use Symfony\Component\HttpKernel\Event\GetResponseEvent;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;

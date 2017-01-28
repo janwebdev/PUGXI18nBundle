@@ -1,6 +1,6 @@
 <?php
 
-namespace PUGX\I18nBundle\DependencyInjection;
+namespace Janwebdev\SFI18nBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -18,7 +18,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('pugx_i18n');
+        $rootNode = $treeBuilder->root('sf_i18n');
         
         $rootNode
             ->children()

@@ -1,6 +1,6 @@
 <?php
 
-namespace PUGX\I18nBundle\DependencyInjection;
+namespace Janwebdev\SFI18nBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Loader;
  *
  * To learn more see {@link http://symfony.com/doc/current/cookbook/bundles/extension.html}
  */
-class PUGXI18nExtension extends Extension
+class SFI18nExtension extends Extension
 {
     /**
      * {@inheritDoc}
@@ -28,6 +28,6 @@ class PUGXI18nExtension extends Extension
     
     public function getAlias()
     {
-        return 'pugx_i18n';
+        return 'sf_i18n';
     }
 }
