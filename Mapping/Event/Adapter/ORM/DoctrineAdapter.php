@@ -1,8 +1,8 @@
 <?php
 
-namespace PUGX\I18nBundle\Mapping\Event\Adapter\ORM;
+namespace Janwebdev\SFI18nBundle\Mapping\Event\Adapter\ORM;
 
-use PUGX\I18nBundle\Mapping\Event\Adapter\EventAdapterInterface;
+use Janwebdev\SFI18nBundle\Mapping\Event\Adapter\EventAdapterInterface;
 use Doctrine\Common\EventArgs;
 use Doctrine\ORM\Proxy\Proxy;
 
