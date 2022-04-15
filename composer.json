@@ -15,9 +15,12 @@
     "require": {
         "php": ">=7.4",
         "symfony/framework-bundle": ">=3.2",
-        "doctrine/orm": "^2.5",
-        "symfony/yaml": "6.0.x-dev"
+        "doctrine/orm": "^2.5"
     },
+    "require-dev": {
+        "symfony/yaml": "dev-master"
+    },
+
     "autoload": {
         "psr-0": {
             "Janwebdev\\SFI18nBundle": ""
