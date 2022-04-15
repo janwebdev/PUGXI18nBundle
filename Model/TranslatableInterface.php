@@ -2,6 +2,7 @@
 
 namespace Janwebdev\SFI18nBundle\Model;
 
+use Doctrine\Common\Collections\Collection;
 use Janwebdev\SFI18nBundle\Model\TranslatingInterface;
 use Janwebdev\SFI18nBundle\Locale\LocaleInterface;
 
@@ -11,7 +12,7 @@ interface TranslatableInterface
     
     public function addTranslation(TranslatingInterface $translation): void;
     
-    public function getTranslations(): ?TranslatingInterface;
+    public function getTranslations(): Collection;
     
     public function setLocale(LocaleInterface $locale): void;
 }
