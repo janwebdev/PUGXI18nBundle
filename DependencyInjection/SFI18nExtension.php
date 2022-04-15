@@ -17,7 +17,7 @@ class SFI18nExtension extends Extension
     /**
      * {@inheritDoc}
      */
-    public function load(array $configs, ContainerBuilder $container)
+    public function load(array $configs, ContainerBuilder $container): void
     {
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
@@ -26,7 +26,7 @@ class SFI18nExtension extends Extension
         $loader->load('services.yml'); 
     }
     
-    public function getAlias()
+    public function getAlias(): string
     {
         return 'sf_i18n';
     }

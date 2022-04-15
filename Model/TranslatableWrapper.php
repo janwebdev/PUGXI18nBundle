@@ -27,9 +27,9 @@ abstract class TranslatableWrapper extends Translatable
         return $this->__get($method);
     }
     
-    protected function getGetters($method)
+    protected function getGetters($method): array
     {
-        $getters = array();
+        $getters = [];
         $getters[] = $method;
         $getters[] = 'get' . ucfirst($method);
         

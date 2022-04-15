@@ -6,9 +6,9 @@ use Janwebdev\SFI18nBundle\Model\TranslatableInterface;
 
 interface TranslatingInterface
 {
-    function setLocale($string);
+    public function setLocale(string $string): self;
     
-    function getLocale();
+    public function getLocale(): string;
     
-    function setTranslatable(TranslatableInterface $translatable);
+    public function setTranslatable(TranslatableInterface $translatable): self;
 }

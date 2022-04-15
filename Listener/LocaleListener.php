@@ -3,8 +3,7 @@
 namespace Janwebdev\SFI18nBundle\Listener;
 
 use Janwebdev\SFI18nBundle\Locale\LocaleInterface;
-use Symfony\Component\HttpKernel\KernelEvents;
-use Symfony\Component\HttpKernel\Event\GetResponseEvent;
+use Symfony\Component\HttpKernel\Event\ResponseEvent;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 /**
  * 
@@ -12,21 +11,21 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
  */
 class LocaleListener implements EventSubscriberInterface
 {
-    private $locale;
+    private LocaleInterface $locale;
 
     public function __construct(LocaleInterface $locale)
     {
         $this->locale = $locale;
     }
     
-    public static function getSubscribedEvents() 
+    public static function getSubscribedEvents(): array
     {
-        return array(
+        return [
             'kernel.request' => 'setLocale'
-        );
+        ];
     }
     
-    public function setLocale(GetResponseEvent $event)
+    public function setLocale(ResponseEvent $event): void
     {
         $this->locale->setLocale($event->getRequest()->getLocale());
     }    

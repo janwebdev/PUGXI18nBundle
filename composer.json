@@ -13,13 +13,15 @@
     ],
     "minimum-stability": "dev",
     "require": {
-        "php": ">=5.3.3|^7.1.3|^8.0",
+        "php": ">=7.4",
         "symfony/framework-bundle": ">=3.2",
         "doctrine/orm": "^2.5",
         "symfony/yaml": "6.0.x-dev"
     },
     "autoload": {
-        "psr-0": { "Janwebdev\\SFI18nBundle": "" }
+        "psr-0": {
+            "Janwebdev\\SFI18nBundle": ""
+        }
     },
 
     "target-dir": "Janwebdev/SFI18nBundle"

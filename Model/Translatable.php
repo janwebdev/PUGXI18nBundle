@@ -7,42 +7,30 @@ use Janwebdev\SFI18nBundle\Locale\LocaleInterface;
 
 abstract class Translatable implements TranslatableInterface
 {
-    /**
-     * current translation
-     * @var \Janwebdev\SFI18nBundle\Model\TranslatingInterface
-     */
-    protected $translation = null;
-    
-    /**
-     *
-     * @var \Janwebdev\SFI18nBundle\Locale\LocaleInterface
-     */
-    protected $locale = null;
+    protected ?TranslatingInterface $translation = null;
+    protected ?LocaleInterface $locale = null;
         
     /**
-     *
-     * @param string $locale
+     * @param LocaleInterface $locale
      */
-    public function setLocale(LocaleInterface $locale)
+    public function setLocale(LocaleInterface $locale): void
     {
         $this->locale = $locale;
     } 
     
     /**
-     *
-     * @param TranslatingInterface $translation 
+     * @param TranslatingInterface $translation
      */
-    public function setTranslation(TranslatingInterface $translation)
+    public function setTranslation(TranslatingInterface $translation): void
     {
         $this->translation = $translation;
     }
     
     /**
      * Add translations
-     *
      * @param TranslatingInterface $translation
      */
-    public function addTranslation(TranslatingInterface $translation)
+    public function addTranslation(TranslatingInterface $translation): void
     {
         $this->translations[$translation->getLocale()] = $translation;
     }
@@ -55,7 +43,7 @@ abstract class Translatable implements TranslatableInterface
     /**
      * if you need a transaltion even in a translation in current language was not found, return true
      */
-    protected function acceptFirstTransaltionAsDefault()
+    protected function acceptFirstTransaltionAsDefault(): bool
     {
         return false;
     }
@@ -63,7 +51,7 @@ abstract class Translatable implements TranslatableInterface
     /**
      * if you don't want that only translation in locale will be returned, return false
      */
-    protected function acceptDefaultLocaleTransaltionAsDefault()
+    protected function acceptDefaultLocaleTransaltionAsDefault(): bool
     {
         return true;
     }
@@ -72,7 +60,7 @@ abstract class Translatable implements TranslatableInterface
      * get current translation based on locale
      * @return TranslatingInterface $translation|null 
      */
-    public function getTranslation()
+    public function getTranslation(): ?TranslatingInterface
     {
         if ( !is_null($this->translation) ) {
             return $this->translation;

@@ -14,8 +14,8 @@ use Janwebdev\SFI18nBundle\Mapping\Event\Adapter\EventAdapterInterface;
  */
 class TranslatableListener implements EventSubscriber
 {
-    protected $locale;
-    protected $adapter;
+    protected LocaleInterface $locale;
+    protected EventAdapterInterface $adapter;
 
     public function __construct(EventAdapterInterface $adapter, LocaleInterface $locale)
     {
@@ -23,14 +23,14 @@ class TranslatableListener implements EventSubscriber
         $this->locale   = $locale;
     }
     
-    public function getSubscribedEvents()
+    public function getSubscribedEvents(): array
     {
-        return array(
-            'postLoad',
-        );
+        return [
+            'postLoad'
+        ];
     }
 
-    public function postLoad(EventArgs $args)
+    public function postLoad(EventArgs $args): void
     {
         $entity = $this->adapter->getObject($args);
         

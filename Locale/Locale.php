@@ -8,26 +8,26 @@ namespace Janwebdev\SFI18nBundle\Locale;
  */
 class Locale implements LocaleInterface
 {
-    private $locale,
-            $defaultLocale;
+    private string $locale;
+    private string $defaultLocale;
     
-    public function __construct($defaultLocale)
+    public function __construct(string $defaultLocale)
     {
         $this->locale        = $defaultLocale;
         $this->defaultLocale = $defaultLocale;
     }
     
-    public function setLocale($locale)
+    public function setLocale(string $locale): void
     {
         $this->locale = $locale;
     }
     
-    public function getLocale()
+    public function getLocale(): string
     {
         return $this->locale;
     }
     
-    public function getDefaultLocale()
+    public function getDefaultLocale(): string
     {
         return $this->defaultLocale;
     }

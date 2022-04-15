@@ -8,9 +8,9 @@ namespace Janwebdev\SFI18nBundle\Locale;
  */
 interface LocaleInterface
 {
-    function setLocale($locale);
+    public function setLocale(string $locale): void;
     
-    function getLocale();
+    public function getLocale(): string;
     
-    function getDefaultLocale();
+    public function getDefaultLocale(): string;
 }

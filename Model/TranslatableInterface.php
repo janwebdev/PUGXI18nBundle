@@ -7,11 +7,11 @@ use Janwebdev\SFI18nBundle\Locale\LocaleInterface;
 
 interface TranslatableInterface
 {    
-    function setTranslation(TranslatingInterface $translation);
+    public function setTranslation(TranslatingInterface $translation): void;
     
-    function addTranslation(TranslatingInterface $translation);
+    public function addTranslation(TranslatingInterface $translation): void;
     
-    function getTranslations();
+    public function getTranslations(): ?TranslatingInterface;
     
-    function setLocale(LocaleInterface $locale);
+    public function setLocale(LocaleInterface $locale): void;
 }
